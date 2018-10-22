@@ -47,7 +47,7 @@ https.get(XRP, function (res) {
 router.get('/', (req, res, next) => {
   res.render('top', {
     title: 'TOP',
-    rate: res
+    rate: `${res.rate}`
   });
 });
 
